@@ -1,0 +1,40 @@
+{
+  "month": "2026-06",
+  "updated_at": "2026-05-12",
+  "host": {
+    "name": "門脇 幸平",
+    "title": "Argonグループ 代表"
+  },
+  "seminars": [
+    {
+      "date": "2026-06-01",
+      "start_time": "20:00",
+      "end_time": "21:30",
+      "title": "オープン前に集客75人・求人応募6人。ノウハウ大公開。",
+      "description": "",
+      "keyword": "6月セミナー"
+    },
+    {
+      "date": "2026-06-02",
+      "start_time": "12:00",
+      "end_time": "14:30",
+      "title": "ランチ&ポッピングシャワー会 @表参道",
+      "description": "",
+      "keyword": "ポッピング"
+    },
+    {
+      "date": "2026-06-15",
+      "start_time": "16:00",
+      "end_time": "18:00",
+      "title": "イカの活き造り会 @博多",
+      "description": "",
+      "keyword": "イカ"
+    },
+    {
+      "date": "2026-06-23",
+      "title": "採用・育成・定着 完全攻略セミナー @品川",
+      "description": "",
+      "keyword": "品川セミナー"
+    }
+  ]
+}
