@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>サロンのたまり場 年間スケジュール | Argon</title>
+  <meta name="description" content="Argonサロン会員向け たまり場・ツアー・ゴルフコンペの年間スケジュールと地域別LINEグループのご案内。" />
+  <meta property="og:title" content="サロンのたまり場 年間スケジュール | Argon" />
+  <meta property="og:description" content="Argonサロン会員向け たまり場の年間スケジュール。" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#fbfaf6" />
+  <link rel="icon" type="image/png" href="assets/tamariba-logo.png" />
+  <link rel="apple-touch-icon" href="assets/tamariba-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-tamariba">
+  <header class="site-header">
+    <div class="container">
+      <img class="site-logo site-logo--tamariba" src="assets/tamariba-logo.png" alt="たまり場" />
+      <h1 class="site-title">
+        <span class="site-title__sub">Tamariba Schedule</span>
+        <span class="site-title__main">サロンのたまり場 年間スケジュール</span>
+      </h1>
+      <p class="site-host" id="year-meta"></p>
+      <p class="site-month" id="note-meta"></p>
+      <div class="site-ornament" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section id="event-list" class="seminar-list" aria-live="polite">
+      <p class="loading">読み込み中…</p>
+    </section>
+
+    <section class="line-groups" id="line-groups" aria-label="地域別LINEグループ">
+      <h2 class="line-groups__title">
+        <span class="line-groups__title-sub">LINE Groups</span>
+        <span class="line-groups__title-main">各地域 LINEグループ</span>
+      </h2>
+      <div class="line-groups__grid" id="line-groups-grid"></div>
+    </section>
+
+    <a class="cross-link cross-link--seminar" href="index.html">
+      <img class="cross-link__logo cross-link__logo--seminar" src="assets/argon-logo.png" alt="Argon" />
+      <span class="cross-link__text">
+        <span class="cross-link__sub">Seminar Schedule</span>
+        <span class="cross-link__main">門脇幸平 セミナー開催スケジュールはこちら</span>
+      </span>
+      <span class="cross-link__arrow" aria-hidden="true">→</span>
+    </a>
+
+    <section class="footer-note">
+      <p class="updated" id="updated-meta"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Argon Group</p>
+    </div>
+  </footer>
+
+  <script src="tamariba.js"></script>
+</body>
+</html>

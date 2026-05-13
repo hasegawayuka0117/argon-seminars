@@ -1,6 +1,6 @@
 {
   "month": "2026-06",
-  "updated_at": "2026-05-12",
+  "updated_at": "2026-05-13",
   "host": {
     "name": "門脇 幸平",
     "title": "Argonグループ 代表"
@@ -12,7 +12,7 @@
       "end_time": "21:30",
       "title": "オープン前に集客75人・求人応募6人。ノウハウ大公開。",
       "description": "",
-      "keyword": "6月セミナー"
+      "signup_url": "https://liff.line.me/2008691824-IhRdLg0g?unique_key=15RF0D&ts=1778679475"
     },
     {
       "date": "2026-06-02",
@@ -20,7 +20,7 @@
       "end_time": "14:30",
       "title": "ランチ&ポッピングシャワー会 @表参道",
       "description": "",
-      "keyword": "ポッピング"
+      "signup_url": "https://s.lmes.jp/landing-qr/2008691824-KyllotBH?uLand=q3iQPh"
     },
     {
       "date": "2026-06-15",
@@ -28,13 +28,15 @@
       "end_time": "18:00",
       "title": "イカの活き造り会 @博多",
       "description": "",
-      "keyword": "イカ"
+      "signup_url": "https://s.lmes.jp/landing-qr/2008691824-KyllotBH?uLand=11uO3X"
     },
     {
       "date": "2026-06-23",
+      "start_time": "15:00",
+      "end_time": "18:00",
       "title": "採用・育成・定着 完全攻略セミナー @品川",
       "description": "",
-      "keyword": "品川セミナー"
+      "signup_url": "https://liff.line.me/2008691824-IhRdLg0g?unique_key=QcYoYt&ts=1778679475"
     }
   ]
 }

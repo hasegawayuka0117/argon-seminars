@@ -193,8 +193,8 @@ body {
   line-height: 1.85;
 }
 
-/* ===== Keyword ===== */
-.seminar-keyword {
+/* ===== Signup ===== */
+.seminar-signup {
   margin-top: 16px;
   padding: 18px 20px;
   background: linear-gradient(180deg, #fdf9ee 0%, #faf3df 100%);
@@ -203,7 +203,7 @@ body {
   position: relative;
 }
 
-.seminar-keyword__label {
+.seminar-signup__label {
   font-family: "Cormorant Garamond", serif;
   font-size: 12px;
   letter-spacing: 0.22em;
@@ -213,52 +213,45 @@ body {
   margin-bottom: 6px;
 }
 
-.seminar-keyword__value {
+.seminar-signup__btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
   width: 100%;
   font-family: "Noto Serif JP", serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #ffffff;
   margin: 4px 0 10px;
-  padding: 12px 16px;
-  background: #ffffff;
-  border: 1px solid var(--color-gold);
+  padding: 14px 16px;
+  background: linear-gradient(180deg, var(--color-gold) 0%, var(--color-gold-deep) 100%);
+  border: 1px solid var(--color-gold-deep);
   border-radius: 8px;
   letter-spacing: 0.06em;
   font-feature-settings: "palt";
   cursor: pointer;
-  text-align: left;
-  transition: background 0.18s ease, border-color 0.18s ease, transform 0.1s ease;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.18s ease, transform 0.1s ease, box-shadow 0.18s ease;
+  box-shadow: 0 2px 6px rgba(74, 69, 64, 0.12);
 }
 
-.seminar-keyword__value:hover {
-  background: #fffbf2;
-  border-color: var(--color-gold-deep);
+.seminar-signup__btn:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 4px 10px rgba(74, 69, 64, 0.18);
 }
 
-.seminar-keyword__value:active {
+.seminar-signup__btn:active {
   transform: scale(0.99);
 }
 
-.seminar-keyword__value.is-copied {
-  background: #f3ebd6;
-  border-color: var(--color-gold-deep);
+.seminar-signup__btn-arrow {
+  font-size: 18px;
+  line-height: 1;
 }
 
-.seminar-keyword__copy {
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  color: var(--color-gold-deep);
-  white-space: nowrap;
-}
-
-.seminar-keyword__note {
+.seminar-signup__note {
   font-size: 12.5px;
   color: var(--color-text-soft);
   margin: 0;
@@ -358,5 +351,439 @@ body {
   }
 
   .seminar-body__title { font-size: 18px; }
-  .seminar-keyword__value { font-size: 18px; padding: 10px 14px; }
+  .seminar-signup__btn { font-size: 16px; padding: 12px 14px; }
+
+  .seminar-date--range {
+    grid-template-columns: auto 1fr;
+  }
+  .seminar-date--range .seminar-date__month {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .seminar-date__range {
+    grid-row: 1 / 3;
+    grid-column: 2;
+    justify-self: end;
+  }
+
+  .line-groups { padding: 28px 20px; }
+  .line-groups__grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .line-group { padding: 14px 14px; }
+  .line-group__region { font-size: 16px; }
+  .line-group__action { font-size: 11.5px; }
+}
+
+/* ===== Date range (multi-day events) ===== */
+.seminar-date--range .seminar-date__range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.seminar-date__range-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+
+.seminar-date__range-part .seminar-date__day {
+  font-size: 36px;
+  margin: 0 0 2px;
+}
+
+.seminar-date__range-part .seminar-date__weekday {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+.seminar-date__range-month {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: var(--color-gold-deep);
+  margin-bottom: 2px;
+}
+
+.seminar-date__range-sep {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  color: var(--color-gold-deep);
+  padding: 0 2px;
+}
+
+/* ===== Location ===== */
+.seminar-body__location {
+  font-size: 14px;
+  color: var(--color-text-soft);
+  margin: 0 0 14px;
+  letter-spacing: 0.04em;
+}
+
+/* ===== Signup note-only (no URL) ===== */
+.seminar-signup--note {
+  background: #faf7f0;
+  border-style: dashed;
+}
+
+.seminar-signup__note-only {
+  margin: 0;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  font-size: 15px;
+  color: var(--color-charcoal);
+  letter-spacing: 0.04em;
+  padding: 4px 0;
+}
+
+/* ===== LINE groups ===== */
+.line-groups {
+  margin-top: 56px;
+  padding: 36px 32px;
+  background: linear-gradient(180deg, #ffffff 0%, var(--color-bg-soft) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.line-groups__title {
+  margin: 0 0 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.line-groups__title-sub {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  color: var(--color-gold-deep);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.line-groups__title-main {
+  font-family: "Noto Serif JP", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  letter-spacing: 0.06em;
+}
+
+.line-groups__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.line-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 16px 16px;
+  background: #06c755;
+  border: 1px solid #05a648;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: filter 0.18s ease, transform 0.1s ease, box-shadow 0.18s ease;
+  box-shadow: 0 2px 6px rgba(6, 199, 85, 0.18);
+}
+
+.line-group:hover {
+  filter: brightness(1.06);
+  box-shadow: 0 4px 10px rgba(6, 199, 85, 0.25);
+}
+
+.line-group:active {
+  transform: scale(0.99);
+}
+
+.line-group__region {
+  font-family: "Noto Serif JP", serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.line-group__action {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  opacity: 0.95;
+}
+
+/* ===== Cross-link (page-to-page navigation card) ===== */
+.cross-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 40px;
+  padding: 24px 28px;
+  background: linear-gradient(180deg, #ffffff 0%, var(--color-bg-soft) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--color-charcoal);
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cross-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--color-gold) 0%, var(--color-gold-soft) 100%);
+}
+
+.cross-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(74, 69, 64, 0.10);
+  border-color: var(--color-gold-soft);
+}
+
+.cross-link__sub {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 13px;
+  letter-spacing: 0.28em;
+  color: var(--color-gold-deep);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.cross-link__main {
+  font-family: "Noto Serif JP", serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.cross-link__arrow {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  color: var(--color-gold-deep);
+  margin-top: 2px;
+}
+
+/* Tamariba-flavored variant (used on seminar page → tamariba) */
+.cross-link--tamariba {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
+  background: linear-gradient(180deg, #fff5f3 0%, #fde4eb 100%);
+  border-color: #f3d8de;
+}
+
+.cross-link--tamariba::before {
+  background: linear-gradient(180deg, #ed6c8d 0%, #fad6df 100%);
+}
+
+.cross-link--tamariba:hover {
+  border-color: #ed6c8d;
+  box-shadow: 0 10px 30px rgba(192, 57, 91, 0.15);
+}
+
+.cross-link__logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 3px 10px rgba(192, 57, 91, 0.22);
+}
+
+.cross-link__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cross-link--tamariba .cross-link__sub {
+  color: #c0395b;
+}
+
+.cross-link--tamariba .cross-link__main {
+  color: #4a2f3a;
+}
+
+.cross-link--tamariba .cross-link__arrow {
+  color: #c0395b;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+/* Argon-flavored variant (used on tamariba page → seminar) */
+.cross-link--seminar {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
+  background: linear-gradient(180deg, #fffdf7 0%, #faf3df 100%) !important;
+  border-color: #f0e6cf !important;
+}
+
+.cross-link--seminar::before {
+  background: linear-gradient(180deg, #c9a961 0%, #f0e6cf 100%) !important;
+}
+
+.cross-link--seminar:hover {
+  border-color: #c9a961 !important;
+  box-shadow: 0 10px 30px rgba(168, 136, 74, 0.18) !important;
+}
+
+.cross-link__logo--seminar {
+  width: 64px;
+  height: 64px;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+  filter: drop-shadow(0 2px 6px rgba(168, 136, 74, 0.25));
+}
+
+.cross-link--seminar .cross-link__sub {
+  color: #a8884a !important;
+}
+
+.cross-link--seminar .cross-link__main {
+  color: #4a4540 !important;
+}
+
+.cross-link--seminar .cross-link__arrow {
+  color: #a8884a !important;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .cross-link--tamariba,
+  .cross-link--seminar {
+    grid-template-columns: 52px 1fr auto;
+    gap: 14px;
+    padding: 18px 18px;
+  }
+  .cross-link__logo,
+  .cross-link__logo--seminar { width: 52px; height: 52px; }
+  .cross-link--tamariba .cross-link__main,
+  .cross-link--seminar .cross-link__main { font-size: 15px; }
+}
+
+/* ===== Tamariba theme (ピンク×コーラル×アンバー) ===== */
+.theme-tamariba {
+  --color-bg: #fef6f4;
+  --color-bg-soft: #fce8ec;
+  --color-text: #3d2f33;
+  --color-text-soft: #6a4f5a;
+  --color-muted: #a48591;
+  --color-gold: #ed6c8d;
+  --color-gold-deep: #c0395b;
+  --color-gold-soft: #fad6df;
+  --color-charcoal: #4a2f3a;
+  --color-border: #f3d8de;
+}
+
+.theme-tamariba .site-header {
+  background:
+    radial-gradient(ellipse at top, rgba(237, 108, 141, 0.16) 0%, transparent 60%),
+    linear-gradient(180deg, #fff5f1 0%, var(--color-bg) 100%);
+}
+
+.site-logo--tamariba {
+  width: 110px;
+  border-radius: 50%;
+  box-shadow: 0 6px 22px rgba(192, 57, 91, 0.22);
+}
+
+.theme-tamariba .seminar-signup__btn {
+  background: linear-gradient(180deg, #ed6c8d 0%, #c0395b 100%);
+  border-color: var(--color-gold-deep);
+  box-shadow: 0 2px 8px rgba(192, 57, 91, 0.22);
+}
+
+.theme-tamariba .seminar-signup__btn:hover {
+  box-shadow: 0 4px 12px rgba(192, 57, 91, 0.32);
+}
+
+.theme-tamariba .seminar-signup {
+  background: linear-gradient(180deg, #fff5f3 0%, #fde4eb 100%);
+}
+
+.theme-tamariba .seminar-signup--note {
+  background: #fcf2f4;
+}
+
+.theme-tamariba .line-groups {
+  background: linear-gradient(180deg, #ffffff 0%, #fde8ec 100%);
+}
+
+/* Hint link below signup button — points to LINE section */
+.seminar-signup__hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px dashed var(--color-gold);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-charcoal);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  transition: background 0.15s ease;
+}
+
+.seminar-signup__hint:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.seminar-signup__hint-text {
+  font-family: "Noto Serif JP", serif;
+}
+
+.seminar-signup__hint-arrow {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--color-gold-deep);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Scroll-anchor target visual emphasis */
+.theme-tamariba #line-groups {
+  scroll-margin-top: 20px;
+}
+
+.theme-tamariba .line-groups__title-sub {
+  color: var(--color-gold-deep);
+}
+
+.theme-tamariba .site-title__main {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .theme-tamariba .site-title__main {
+    font-size: 20px;
+    letter-spacing: 0.08em;
+  }
 }

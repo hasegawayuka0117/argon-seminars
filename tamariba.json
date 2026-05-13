@@ -1,0 +1,97 @@
+{
+  "year": "2026",
+  "updated_at": "2026-05-13",
+  "page_title": "サロンのたまり場 年間スケジュール",
+  "events": [
+    {
+      "date": "2026-05-22",
+      "start_time": "18:30",
+      "location": "仙台",
+      "title": "東北たまり場",
+      "signup_url": "https://chouseisan.com/s?h=196769b0482c48e793cd45cc6e8155ed",
+      "signup_label": "出欠入力"
+    },
+    {
+      "date": "2026-05-26",
+      "location": "千葉",
+      "title": "ゴルフコンペ",
+      "signup_note": "希望者はメッセージください"
+    },
+    {
+      "date": "2026-06-09",
+      "end_date": "2026-06-11",
+      "location": "韓国",
+      "title": "韓国ツアー",
+      "signup_note": "希望者はメッセージください"
+    },
+    {
+      "date": "2026-06-22",
+      "start_time": "18:00",
+      "location": "大阪",
+      "title": "関西たまり場",
+      "signup_url": "https://chouseisan.com/s?h=2cbeea61d358417babfa2521d0a26e54",
+      "signup_label": "出欠入力"
+    },
+    {
+      "date": "2026-07-21",
+      "start_time": "18:00",
+      "location": "東京",
+      "title": "関東たまり場",
+      "signup_url": "https://chouseisan.com/s?h=65ea28998ff348bcb2a64043e93fb391",
+      "signup_label": "出欠入力"
+    },
+    {
+      "date": "2026-09-07",
+      "start_time": "18:00",
+      "location": "福岡",
+      "title": "九州たまり場",
+      "signup_url": "https://chouseisan.com/s?h=1ead25ca0d0a432e88813ba094a7f394",
+      "signup_label": "出欠入力"
+    },
+    {
+      "date": "2026-09-14",
+      "end_date": "2026-09-16",
+      "location": "韓国",
+      "title": "韓国ツアー2",
+      "signup_note": "希望者はメッセージください"
+    },
+    {
+      "date": "2026-10-26",
+      "start_time": "18:00",
+      "location": "大阪",
+      "title": "関西たまり場",
+      "signup_url": "https://chouseisan.com/s?h=7fc64fae215f4d7a886b1839a5b49151",
+      "signup_label": "出欠入力"
+    },
+    {
+      "date": "2026-11-06",
+      "start_time": "18:00",
+      "location": "仙台",
+      "title": "東北たまり場",
+      "signup_url": "https://chouseisan.com/s?h=7a0667e9b8a5433bab312b34d057f168",
+      "signup_label": "出欠入力"
+    }
+  ],
+  "line_groups": [
+    {
+      "region": "東北",
+      "url": "https://line.me/ti/g2/yF1y_m4LtR0h_lWHK4JvFpQAGI0hNI0cl_nfxw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+    },
+    {
+      "region": "関東",
+      "url": "https://line.me/ti/g2/hr5vXT3nr3F7ZmXISORquREWK1818TSPD82S3g?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+    },
+    {
+      "region": "中部東海",
+      "url": "https://line.me/ti/g2/aX0mopddob1BFfihQQYRHFLtcrFNMz6uUIOuYQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+    },
+    {
+      "region": "関西",
+      "url": "https://line.me/ti/g2/zXo3l-T-CG-U3yDUX79_s18x2Vb5uoGV6l1YCw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+    },
+    {
+      "region": "九州",
+      "url": "https://line.me/ti/g2/vVDKUzhiUWNXP06ZgUAYPUOheWRBs43LFj7I_Q?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"
+    }
+  ]
+}

@@ -65,7 +65,7 @@ function renderCard(s) {
 
   const desc = s.description ? `<p class="seminar-body__desc">${escapeHtml(s.description)}</p>` : "";
 
-  const keywordBlock = s.keyword ? renderKeyword(s.keyword) : "";
+  const signupBlock = s.signup_url ? renderSignup(s.signup_url) : "";
 
   return `
     <article class="seminar-card">
@@ -78,59 +78,23 @@ function renderCard(s) {
       <div class="seminar-body">
         <h2 class="seminar-body__title">${escapeHtml(s.title || "セミナー")}</h2>
         ${desc}
-        ${keywordBlock}
+        ${signupBlock}
       </div>
     </article>
   `;
 }
 
-function renderKeyword(keyword) {
+function renderSignup(url) {
   return `
-    <div class="seminar-keyword">
-      <div class="seminar-keyword__label">お申込みキーワード</div>
-      <button type="button" class="seminar-keyword__value" data-copy="${escapeAttr(keyword)}" title="タップでコピー">
-        <span class="seminar-keyword__value-text">${escapeHtml(keyword)}</span>
-        <span class="seminar-keyword__copy">タップでコピー</span>
-      </button>
-      <p class="seminar-keyword__note">上のキーワードをコピーし、LINEのトーク画面に送信してください。申込フォームのご案内が届きます。</p>
+    <div class="seminar-signup">
+      <div class="seminar-signup__label">お申込みはこちら</div>
+      <a class="seminar-signup__btn" href="${escapeAttr(url)}" target="_blank" rel="noopener noreferrer">
+        <span class="seminar-signup__btn-text">お申込みフォームへ</span>
+        <span class="seminar-signup__btn-arrow" aria-hidden="true">→</span>
+      </a>
+      <p class="seminar-signup__note">上のボタンをタップすると、お申込みフォームが開きます。</p>
     </div>
   `;
-}
-
-document.addEventListener("click", async (e) => {
-  const btn = e.target.closest("[data-copy]");
-  if (!btn) return;
-  const text = btn.getAttribute("data-copy");
-  try {
-    await navigator.clipboard.writeText(text);
-    flashCopyState(btn, "コピーしました");
-  } catch (err) {
-    const ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed";
-    ta.style.opacity = "0";
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand("copy");
-      flashCopyState(btn, "コピーしました");
-    } catch {
-      flashCopyState(btn, "コピーできませんでした");
-    }
-    document.body.removeChild(ta);
-  }
-});
-
-function flashCopyState(btn, msg) {
-  const note = btn.querySelector(".seminar-keyword__copy");
-  if (!note) return;
-  const original = note.textContent;
-  note.textContent = msg;
-  btn.classList.add("is-copied");
-  setTimeout(() => {
-    note.textContent = original;
-    btn.classList.remove("is-copied");
-  }, 1600);
 }
 
 function escapeHtml(str) {
