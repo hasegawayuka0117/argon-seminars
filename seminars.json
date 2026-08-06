@@ -1,17 +1,10 @@
 {
-  "month": "2026-07",
-  "updated_at": "2026-06-24",
+  "month": "2026-08",
+  "updated_at": "2026-08-06",
   "host": {
     "name": "門脇 幸平",
     "title": "Argonグループ 代表"
   },
-  "seminars": [
-    {
-      "date": "2026-07-21",
-      "start_time": "18:00",
-      "title": "サロンのたまり場 @東京",
-      "description": "",
-      "signup_url": "https://chouseisan.com/s?h=65ea28998ff348bcb2a64043e93fb391"
-    }
-  ]
+  "empty_message": "8月の開催予定はございません。次回の開催が決まり次第、こちらに掲載します。",
+  "seminars": []
 }

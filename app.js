@@ -49,7 +49,8 @@ function render(data) {
     .sort((a, b) => a.date.localeCompare(b.date));
 
   if (upcoming.length === 0) {
-    listEl.innerHTML = `<p class="empty">今月の開催予定は現在準備中です。決まり次第こちらに掲載します。</p>`;
+    const msg = data.empty_message || "今月の開催予定は現在準備中です。決まり次第こちらに掲載します。";
+    listEl.innerHTML = `<p class="empty">${escapeHtml(msg)}</p>`;
     return;
   }
 
