@@ -176,6 +176,34 @@ body {
 }
 
 /* ===== Body ===== */
+/* たまり場など、シリーズもののイベントに付ける小さなロゴバッジ */
+.seminar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 8px;
+  padding: 4px 10px 4px 5px;
+  border-radius: 999px;
+  background: #fff3f4;
+  border: 1px solid #f3c9cf;
+}
+
+.seminar-brand__logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.seminar-brand__text {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #c2566a;
+  white-space: nowrap;
+}
+
 .seminar-body__title {
   font-family: "Noto Serif JP", serif;
   font-size: 20px;
