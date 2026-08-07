@@ -1,10 +1,24 @@
 {
   "month": "2026-08",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-07",
   "host": {
     "name": "門脇 幸平",
     "title": "Argonグループ 代表"
   },
-  "empty_message": "8月の開催予定はございません。次回の開催が決まり次第、こちらに掲載します。",
-  "seminars": []
+  "seminars": [
+    {
+      "date": "2026-08-10",
+      "title": "たまり場×むすびや 交流会",
+      "description": "",
+      "signup_url": "https://salon-tamariba.netlify.app/"
+    },
+    {
+      "date": "2026-08-27",
+      "start_time": "11:30",
+      "end_time": "14:30",
+      "title": "サロンオーナーBBQ @仙台",
+      "description": "エステ業界で頑張るオーナーさんたちと、BBQしながら情報交換しませんか？\n初参加の方も大歓迎です。気さくな仲間ばかりなので、お気軽にお越しください♪\n\n会場：定禅寺ヒルズ 屋上（仙台市青葉区国分町3丁目3-1）\nアクセス：勾当台公園駅 徒歩2分\n参加費：¥6,500（当日現金）\n定員：限定15名",
+      "signup_url": "https://esgra-bbq-0827.netlify.app"
+    }
+  ]
 }
